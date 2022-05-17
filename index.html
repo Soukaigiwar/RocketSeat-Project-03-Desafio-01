@@ -21,43 +21,71 @@
             <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
         </header>
         <main>
-            <form action="">
+            <form action="#" id="my_form" method="get">
                 <fieldset>
-                    <legend>Informações Pessoais</legend>
-                    <label for="text_nome">Nome</label>
-                    <input type="text" name="text_nome" id="text_nome">
-                    <label for="text_sobrenome">Sobrenome</label>
-                    <input type="text" name="text_sobrenome" id="text_sobrenome">
-                    <label for="text_password">Email<span>(digite um email válido)</span></label>
-                    <input type="email" name="text_email" id="text_email">
-                    <label for="text_password">Senha<span>(mínimo de 6 caracteres)</span></label>
-                    <input type="password" name="text_password" id="text_password">
+                    <div class="input_group">
+                        <legend>Informações Pessoais</legend>
+                        <div class="col_2">
+                            <div class="text_group">
+                                <label for="text_nome">Nome</label>
+                                <input type="text" name="text_nome" id="text_nome">
+                            </div>
+                            <div class="text_group">
+                                <label for="text_sobrenome">Sobrenome</label>
+                                <input type="text" name="text_sobrenome" id="text_sobrenome">
+                            </div>
+                        </div>
+                        <label for="text_password">Email<span>(digite um email válido)</span></label>
+                        <input type="email" name="text_email" id="text_email">
+                        <label for="text_password">Senha<span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" name="text_password" id="text_password">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Informações do Mentor</legend>
-                    <label for="text_nome">Nome do seu mentor<span>(só o primeiro nome)</span></label>
-                    <input type="text" name="text_nome_mentor" id="text_nome_mentor">
+                    <div class="input_group">
+                        <legend>Informações do Mentor</legend>
+                        <label for="text_nome">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+                        <input type="text" name="text_nome_mentor" id="text_nome_mentor">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Seus horários disponíveis</legend>
-                    <h3>Primeira Mentoria</h3>
-                    <label for="date_data">Data<span>(DD/MM/AAAA)</span></label>
-                    <input type="date" name="date_data" id="date_data">
-                    <label for="time_das">Das</label>
-                    <input type="time" name="time_das" id="time_das">
-                    <label for="time_ate">Até</label>
-                    <input type="time" name="time_ate" id="time_ate">
-                    <h3>Segunda Mentoria</h3>
-                    <label for="date_data">Data<span>(DD/MM/AAAA)</span></label>
-                    <input type="date" name="date_data" id="date_data">
-                    <label for="time_das">Das</label>
-                    <input type="time" name="time_das" id="time_das">
-                    <label for="time_ate">Até</label>
-                    <input type="time" name="time_ate" id="time_ate">
+                    <div class="input_group">
+                        <legend>Seus horários disponíveis</legend>
+                        <h3>Primeira Mentoria</h3>
+                        <div class="col_3">
+                            <div class="date_group">
+                                <label for="date_data">Data<span>(DD/MM/AAAA)</span></label>
+                                <input type="date" name="date_data" id="date_data">
+                            </div>
+                            <div class="date_group">
+                                <label for="time_das">Das</label>
+                                <input type="time" name="time_das" id="time_das">
+                            </div>
+                            <div class="date_group">
+                                <label for="time_ate">Até</label>
+                                <input type="time" name="time_ate" id="time_ate">
+                            </div>
+                        </div>
+                        <h3>Segunda Mentoria</h3>
+                        <div class="col_3">
+                            <div class="date_group">
+                                <label for="date_data">Data<span>(DD/MM/AAAA)</span></label>
+                                <input type="date" name="date_data" id="date_data">
+                            </div>
+                            <div class="date_group">
+                                <label for="time_das">Das</label>
+                                <input type="time" name="time_das" id="time_das">
+                            </div>
+                            <div class="date_group">
+                                <label for="time_ate">Até</label>
+                                <input type="time" name="time_ate" id="time_ate">
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
             <div class="form_submit">
-                <button>Salvar</button>
+                <button form="my_form">Salvar</button>
             </div>
         </main>
     </div>
