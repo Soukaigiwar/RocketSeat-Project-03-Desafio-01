@@ -69,7 +69,7 @@ fieldset {
 
 fieldset .input_group legend {
     font-family: 'Staatliches', cursive;
-    color: #535971;
+    color:#83789f;
     width: 100%;
     font-weight: 400;
     font-size: 24px;
@@ -85,6 +85,10 @@ fieldset label {
     font-size: 14px;
     line-height: 24px;
     color: #4E4958;
+}
+
+fieldset .input_group label span:hover {
+    color: #3e3b44;
 }
 
 fieldset .input_group {
@@ -112,6 +116,10 @@ fieldset .input_group input {
     height: 56px;
     margin-bottom: 24px;
     padding: 0 24px;
+}
+
+fieldset .input_group input:invalid {
+    border: 1px solid #FF1010;
 }
 
 fieldset .input_group label {
@@ -154,7 +162,7 @@ fieldset .col_3 {
     border-radius: 0 0 20px 20px;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 150px;
 }
 
 .form_submit button {
